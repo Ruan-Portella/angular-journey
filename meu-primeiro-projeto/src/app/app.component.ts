@@ -7,7 +7,7 @@ import { NewComponent } from './components/new-component/new-component.component
   selector: 'app-root',
   imports: [CommonModule ,RouterOutlet, NewComponent],
   template: `
-   <!-- <router-outlet /> -->
+   <router-outlet />
 
     <h1>Meu primeiro projeto Angular</h1>
     <app-new-component />
