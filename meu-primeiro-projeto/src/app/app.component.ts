@@ -7,10 +7,12 @@ import { TemplateVariablesComponent } from './components/template/template-varia
 import { TemplateControlFlowComponent } from './components/template/template-control-flow/template-control-flow.component';
 import { TemplateDeferrableViewsComponent } from "./components/template/template-deferrable-views/template-deferrable-views.component";
 import { SignalsComponent } from "./components/signals/signals.component";
+import { PaiOuMaeComponent } from './components/comunicacao-entre-components/pai-ou-mae/pai-ou-mae.component';
+import { AngularPipesComponent } from "./components/pipes/angular-pipes/angular-pipes.component";
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, RouterOutlet, NewComponent, TemplateBindingComponent, TemplateVariablesComponent, TemplateControlFlowComponent, TemplateDeferrableViewsComponent, SignalsComponent],
+  imports: [CommonModule, RouterOutlet, NewComponent, TemplateBindingComponent, TemplateVariablesComponent, TemplateControlFlowComponent, TemplateDeferrableViewsComponent, SignalsComponent, PaiOuMaeComponent, AngularPipesComponent],
   template: `
    <router-outlet />
 
@@ -22,6 +24,8 @@ import { SignalsComponent } from "./components/signals/signals.component";
     <app-template-control-flow />
     <app-template-deferrable-views />
     <app-signals />
+    <app-pai-ou-mae />
+    <app-angular-pipes />
   `
 })
 export class AppComponent {}

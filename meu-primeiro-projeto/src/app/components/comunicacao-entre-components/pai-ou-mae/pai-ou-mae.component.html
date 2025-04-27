@@ -1,0 +1,9 @@
+<hr />
+
+<h2>Component Pai ou Mae</h2>
+
+<app-input inputName="Ruan Portella" />
+<app-output (outputName)="outputName.set($event)" />
+
+
+<p>Nome: {{ outputName() }}</p>
