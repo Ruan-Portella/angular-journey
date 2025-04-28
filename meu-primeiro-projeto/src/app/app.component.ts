@@ -9,10 +9,11 @@ import { TemplateDeferrableViewsComponent } from "./components/template/template
 import { SignalsComponent } from "./components/signals/signals.component";
 import { PaiOuMaeComponent } from './components/comunicacao-entre-components/pai-ou-mae/pai-ou-mae.component';
 import { AngularPipesComponent } from "./components/pipes/angular-pipes/angular-pipes.component";
+import { TemplateDrivenFormsComponent } from "./components/forms/template-driven-forms/template-driven-forms.component";
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, RouterOutlet, NewComponent, TemplateBindingComponent, TemplateVariablesComponent, TemplateControlFlowComponent, TemplateDeferrableViewsComponent, SignalsComponent, PaiOuMaeComponent, AngularPipesComponent],
+  imports: [CommonModule, RouterOutlet, NewComponent, TemplateBindingComponent, TemplateVariablesComponent, TemplateControlFlowComponent, TemplateDeferrableViewsComponent, SignalsComponent, PaiOuMaeComponent, AngularPipesComponent, TemplateDrivenFormsComponent],
   template: `
    <router-outlet />
 
@@ -26,6 +27,7 @@ import { AngularPipesComponent } from "./components/pipes/angular-pipes/angular-
     <app-signals />
     <app-pai-ou-mae />
     <app-angular-pipes />
+    <app-template-driven-forms />
   `
 })
 export class AppComponent {}
